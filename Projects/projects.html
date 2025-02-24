@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="max-width">
+    <div class="logo"><a href="../index.html">Nélio <span>Lacerda</span></a></div>
+    <ul class="menu">
+      <li><a href="../index.html" class="menu-btn">Home</a></li>
+      <li><a href="../index.html" class="menu-btn">About</a></li>
+      <li><a href="../index.html" class="menu-btn">Qualities</a></li>
+      <li><a href="../index.html" class="menu-btn">Skills</a></li>
+      <li><a href="../index.html" class="menu-btn">Projects</a></li>
+      <li><a href="../index.html" class="menu-btn">Contact</a></li>
+    </ul>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+</nav>
+
+<br>
+<!-- Projects Section -->
+<section class="projects-section">
+  <div class="max-width">
+    <h2 class="title">My Projects</h2>
+
+    <!-- Botões de Categoria -->
+    <div class="project-categories">
+      <button class="category-btn active" data-category="all">All</button>
+      <button class="category-btn" data-category="game">Game Projects</button>
+      <button class="category-btn" data-category="uni">Uni Projects</button>
+      <button class="category-btn" data-category="personal">Personal Projects</button>
+    </div>
+
+    <!-- Projetos -->
+    <div class="projects-container">
+      <div class="project-card game">
+        <img src="game_project.jpg" alt="Game Project">
+        <h3>Game Project 1</h3>
+        <p>Descrição do jogo.</p>
+        <a href="project/project.html" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card uni">
+        <img src="uni_project.jpg" alt="Uni Project">
+        <h3>Uni Project 1</h3>
+        <p>Projeto acadêmico.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card personal">
+        <img src="personal_project.jpg" alt="Personal Project">
+        <h3>Personal Project 1</h3>
+        <p>Projeto pessoal.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+  <h2>Follow Me</h2>
+  <p>&copy; 2024 Nélio Lacerda | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

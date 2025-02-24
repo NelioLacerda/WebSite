@@ -1,0 +1,237 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Configurações globais */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* Espaço para a navbar */
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background: crimson;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: black;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Contêiner principal */
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Título */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Descrição do projeto */
+.project-description {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Caixa de verificação de email */
+.email-verification {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.email-verification p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.email-verification a {
+    color: crimson;
+    text-decoration: none;
+}
+
+.btn {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #a00000;
+}
+
+/* Seção de compartilhamento */
+.share-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.share-btn {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.share-btn:hover {
+    background: #444;
+}
+
+/* Informações do projeto */
+.project-info {
+    background: #222;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.project-info p {
+    margin: 5px 0;
+}
+
+/* Contador de visualizações */
+.views {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Licença */
+.license {
+    background: #181818;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.license h2 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.license p {
+    font-size: 12px;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+/* Seção de comentários */
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h2 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#comment-input {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.comment {
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ccc;
+}
