@@ -171,7 +171,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/pexels-fr3nks-287227.jpg") no-repeat center;
+    background: url("../images/y9.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -496,7 +496,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/video_white.png") no-repeat;
+    background: url("../images/video_white.png") no-repeat;
     background-size: 100px;
     background-position: center;
     filter:invert(100%);
@@ -508,7 +508,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/graph-white.png") no-repeat;
+    background: url("../images/graph-white.png") no-repeat;
     background-size: 100px;
     background-position: center;
     filter:invert(100%);
@@ -520,7 +520,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/phone_white.png") no-repeat;
+    background: url("../images/phone_white.png") no-repeat;
     background-size: 100px;
     background-position: center;
     filter:invert(100%);
@@ -544,7 +544,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/quest_white.png") no-repeat;
+    background: url("../images/quest_white.png") no-repeat;
     background-size: 100px;
     background-position: center;
     filter:invert(100%);
@@ -574,7 +574,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/quest_black.png") no-repeat;
+    background: url("../images/quest_black.png") no-repeat;
     background-size: 100px;
     background-position: center;
 }
@@ -597,7 +597,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/phone_black.png") no-repeat;
+    background: url("../images/phone_black.png") no-repeat;
     background-size: 100px;
     background-position: center;
 }
@@ -608,7 +608,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/graph-black.png") no-repeat;
+    background: url("../images/graph-black.png") no-repeat;
     background-size: 100px;
     background-position: center;
 }
@@ -619,7 +619,7 @@ section .title::after{
     width: 100px;
     height: 100px;  
     opacity: 1;
-    background: url("images/video_balck.png") no-repeat;
+    background: url("../images/video_balck.png") no-repeat;
     background-size: 100px;
     background-position: center;
 }
