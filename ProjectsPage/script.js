@@ -22,3 +22,34 @@ document.addEventListener("DOMContentLoaded", function() {
     // Exibir todos os projetos por padrão
     document.querySelector(".category-btn[data-category='all']").click();
 });
+
+// ===== script.js =====
+$(document).ready(function() {
+    // Zoom lightbox
+    const lightbox = $('#lightbox');
+    const lbImg = $('#lightbox-img');
+    const caption = $('#caption');
+
+    $('.zoomable').on('click', function() {
+        lbImg.attr('src', $(this).attr('src'));
+        caption.text($(this).attr('alt'));
+        lightbox.fadeIn();
+    });
+
+    $('.close, #lightbox').on('click', function(e) {
+        // fecha apenas se clicar no fundo ou no X
+        if (e.target !== this) return;
+        lightbox.fadeOut();
+    });
+
+    // Copiar link
+    $('#copy-link-btn').on('click', () => {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                $('#copy-link-btn').text('✅ Copied!');
+                setTimeout(() => { $('#copy-link-btn').text('🔗 Copy Link'); }, 2000);
+            })
+            .catch(err => console.error('Erro ao copiar:', err));
+    });
+});
+

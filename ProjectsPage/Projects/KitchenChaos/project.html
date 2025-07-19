@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Showcase: Simple, but Effective</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="max-width">
+    <div class="logo"><a href="">Kitchen Chaos</a></div>
+    <ul class="menu">
+      <li><a href="../../../index.html" class="menu-btn">Home</a></li>
+      <li><a href="../../projects.html" class="menu-btn">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>🍳 My First Game: Kitchen Chaos</h1>
+
+  <!-- Descrição do projeto -->
+  <div class="project-description">
+    <section>
+    <p>Welcome to <strong>Kitchen Chaos</strong>, my very first game developed in Unity!<br>
+      This project was a hands-on learning experience, and I&#39;m excited to share it with you.</p>
+    <blockquote>
+      🎨 <strong>Assets provided by <a href="https://www.youtube.com/@CodeMonkeyUnity" target="_blank" rel="noopener">Code Monkey</a></strong><br>
+      A big thanks to Code Monkey for the high-quality free Unity assets and tutorials!
+    </blockquote>
+    <hr>
+    </section>
+
+    <section>
+      <h2>🎮 About the Game</h2>
+      <p><strong>Kitchen Chaos</strong> is a fun and fast-paced cooking game where players must quickly prepare and serve dishes before time runs out. Think fast, move faster — and try not to burn the kitchen down!</p>
+      <hr>
+    </section>
+
+    <section>
+      <h2>🚀 Play the Game</h2>
+      <p>Download the latest build here:</p>
+      <p><a href="build/KitchenChaos.zip" download><strong>Download for Windows</strong></a></p>
+      <p><em>(More platforms coming soon!)</em></p>
+      <hr>
+    </section>
+
+    <section>
+      <h2>🛠️ Built With</h2>
+      <ul>
+        <li><strong>Unity</strong> – Game engine</li>
+        <li><strong>C#</strong> – Scripting language</li>
+        <li><strong>Code Monkey Assets</strong> – Art, sprites, and tutorials</li>
+      </ul>
+      <hr>
+    </section>
+
+    <section class="images-section">
+      <h2>📷 Game Images</h2>
+      <div class="game-images">
+        <img src="images/mainMenu.png" alt="Main Menu" class="zoomable">
+        <img src="images/init.png" alt="Tutorial" class="zoomable">
+        <img src="images/play.png" alt="Play" class="zoomable">
+      </div>
+    </section>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+      <div id="caption"></div>
+    </div>
+  </div>
+
+  <!-- Seção de compartilhamento -->
+  <div class="share-section">
+    <button id="copy-link-btn" class="share-btn copy">🔗 Copy Link</button>
+    <a href="https://github.com/NelioLacerda/Kitchen-Chaos" target="_blank" class="share-btn github-btn">
+      <i class="fa-brands fa-github"></i> See on GitHub</a>
+  </div>
+
+  <!-- Informações do projeto -->
+  <div class="project-info">
+    <p><strong>Created on:</strong> <span id="created-date">July 19, 2025</span></p>
+    <p><strong>Updated on:</strong> <span id="updated-date">July 19, 2025</span></p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const copyBtn = document.getElementById('copy-link-btn');
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(window.location.href)
+              .then(() => {
+                copyBtn.textContent = '✅ Copied!';
+                setTimeout(() => { copyBtn.textContent = '🔗 Copy Link'; }, 2000);
+              })
+              .catch(err => console.error('Erro ao copiar:', err));
+    });
+  });
+</script>
+
+</body>
+</html>
